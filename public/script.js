@@ -1,7 +1,7 @@
 async function table_get() {
-    const dinnerFetch = await fetch('/api/dining');
-    const dinnerInfo = await dinnerFetch.json();
-    const arrayDinner = dinnerInfo.data;
+    const diningFetch = await fetch('/api/dining');
+    const diningInfo = await diningFetch.json();
+    const arrayDinner = diningInfo.data;
     const info = document.querySelector('.target');
 
     arrayDinner.forEach((element) => {
